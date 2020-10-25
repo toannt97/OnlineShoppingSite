@@ -13,6 +13,8 @@
 </head>
 <body>
     <header>
+
+        <!-- Menu -->
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">OnlineShoppingWebApp</a>
@@ -26,24 +28,56 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" data-toggle="modal" data-target="#loginModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">Sign in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" data-toggle="modal" data-target="#registerModal" data-backdrop="static"  data-keyboard="false" tabindex="-1" aria-hidden="true">Sign up</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- Body -->
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <!-- Modal: Sign in form -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <span class="button-close" onclick="onCloseLoginClick()">X</span>
+                <div class="modal-body modal-login" id="modal-login">
+                    @await Html.PartialAsync("_LoginView");
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Sign up form -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <span class="button-close" onclick="onCloseRegisterClick()">X</span>
+                <div class="modal-register" id="modal-register">
+                    @await Html.PartialAsync("_RegisterView");
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-top footer text-muted" style="background: #5876aa; color:white;">
         <div class="container">
             &copy; 2020 - OnlineShoppingWebApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
+    <!-- Script -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

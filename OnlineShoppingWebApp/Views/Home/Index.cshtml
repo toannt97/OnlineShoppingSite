@@ -4,36 +4,12 @@
 <link rel="stylesheet" href="~/css/home.css" />
 <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-<div class="login-form">
-    <div class="main-div">
-        <div class="panel">
-            <h1>Login</h1>
-            <p>Please enter your email and password</p>
-        </div>
-        <form id="Login">
 
-            <div class="form-group">
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
-
-            </div>
-
-            <div class="form-group">
-
-                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-
-            </div>
-            <div class="forgot">
-                <a href="reset.html">Forgot password?</a>
-            </div>
-            <button type="submit" class="btn btn-primary">Login</button>
-
-        </form>
-    </div>
-
-    <div class="container">
+    @*<div class="container">
         <div class="row main">
             <div class="main-login main-center">
                 <form class="form-horizontal" method="post" action="#">
+                    @Html.AntiForgeryToken()
                     <div style="text-align:center">
                         <h1>Register</h1>
                     </div>
@@ -96,5 +72,4 @@
                 </form>
             </div>
         </div>
-    </div>
-</div>
+    </div>*@

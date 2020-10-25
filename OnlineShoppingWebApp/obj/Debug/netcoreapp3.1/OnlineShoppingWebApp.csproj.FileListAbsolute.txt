@@ -35,3 +35,5 @@ E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppi
 E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\obj\Debug\netcoreapp3.1\OnlineShoppingWebApp.pdb
 E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\obj\Debug\netcoreapp3.1\OnlineShoppingWebApp.genruntimeconfig.cache
 E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\obj\Debug\netcoreapp3.1\OnlineShoppingWebApp.csproj.CopyComplete
+E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginView.cshtml.g.cs
+E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_RegisterView.cshtml.g.cs

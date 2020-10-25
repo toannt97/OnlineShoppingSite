@@ -1,14 +1,9 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿function onCloseLoginClick() {
+    $('#loginModal').modal('hide');
+    $('.modal-backdrop').remove();
+} 
 
-// Write your JavaScript code.
-function openNav() {
-    document.getElementById("mySidenav").style.width = "70%";
-    // document.getElementById("flipkart-navbar").style.width = "50%";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.body.style.backgroundColor = "rgba(0,0,0,0)";
+function onCloseRegisterClick() {
+    $('#registerModal').modal('hide');
+    $('.modal-backdrop').remove();
 }

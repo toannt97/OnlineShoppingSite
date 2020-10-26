@@ -5,11 +5,21 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OnlineShoppingWebApp.Models;
+using Microsoft.AspNetCore.Session;
+using OnlineShoppingWebApp.Common;
+using System.Net.Http;
 
 namespace OnlineShoppingWebApp.Controllers
 {
     public class LoginController : Controller
     {
+        private readonly IHttpClientFactory _httpClientFactory;
+
+        public LoginController(IHttpClientFactory httpClientFactory)
+        {
+            _httpClientFactory = httpClientFactory;
+        }
+
         // GET: LoginController
         public ActionResult Index()
         {
@@ -45,12 +55,16 @@ namespace OnlineShoppingWebApp.Controllers
         // POST: LoginController/SignIn
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult SignIn(UserSignIn _user)
+        public async Task<ActionResult> SignIn(UserSignIn _user)
         {
             try
             {
-                if (!ModelState.IsValid)
+                if (!ModelState.IsValid) 
                     return PartialView("_LoginView",_user);
+                var client = _httpClientFactory.CreateClient("uri");
+                var url = "User";
+                var response = await client.GetAsync(url);
+                var result = await response.Content.ReadAsStringAsync();
                 return View();
 
             }

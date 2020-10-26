@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace OnlineShoppingWebApp.Models
 {
+ 
+    [Serializable]
     public class User
     {
         public int Id { get; set; }

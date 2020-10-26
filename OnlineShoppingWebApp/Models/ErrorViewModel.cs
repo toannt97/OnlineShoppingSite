@@ -2,6 +2,7 @@ using System;
 
 namespace OnlineShoppingWebApp.Models
 {
+    [Serializable]
     public class ErrorViewModel
     {
         public string RequestId { get; set; }

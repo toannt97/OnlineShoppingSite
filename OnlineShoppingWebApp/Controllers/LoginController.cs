@@ -1,22 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OnlineShoppingWebApp.Models;
-using Microsoft.AspNetCore.Session;
-using OnlineShoppingWebApp.Common;
 using System.Net.Http;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 
 namespace OnlineShoppingWebApp.Controllers
 {
     public class LoginController : Controller
     {
+        private readonly ILogger<LoginController> _logger;
         private readonly IHttpClientFactory _httpClientFactory;
 
-        public LoginController(IHttpClientFactory httpClientFactory)
+        public LoginController(ILogger<LoginController> logger,IHttpClientFactory httpClientFactory)
         {
+            _logger = logger;
             _httpClientFactory = httpClientFactory;
         }
 
@@ -61,12 +61,13 @@ namespace OnlineShoppingWebApp.Controllers
             {
                 if (!ModelState.IsValid) 
                     return PartialView("_LoginView",_user);
-                var client = _httpClientFactory.CreateClient("uri");
-                var url = "User";
-                var response = await client.GetAsync(url);
-                var result = await response.Content.ReadAsStringAsync();
-                return View();
+                
+                    var client = _httpClientFactory.CreateClient("uriUser");
+                    var method = "";
+                    var response = await client.PostAsJsonAsync(method, _user);
+                    var result = await response.Content.ReadAsStringAsync();
 
+                return View();
             }
             catch
             {

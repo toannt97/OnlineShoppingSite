@@ -22,7 +22,7 @@ namespace OnlineShoppingWebApp
         {
 
             services.AddControllersWithViews();
-            services.AddHttpClient("uri", b =>
+            services.AddHttpClient("uriUser", b =>
             {
                 b.BaseAddress = new Uri(Configuration.GetSection("MySettings").GetSection("uri").Value);
             });

@@ -18,8 +18,6 @@ E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppi
 E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\obj\Debug\netcoreapp3.1\OnlineShoppingWebApp.csprojAssemblyReference.cache
 E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\obj\Debug\netcoreapp3.1\OnlineShoppingWebApp.AssemblyInfoInputs.cache
 E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\obj\Debug\netcoreapp3.1\OnlineShoppingWebApp.AssemblyInfo.cs
-E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\obj\Debug\netcoreapp3.1\OnlineShoppingWebApp.csproj.CoreCompileInputs.cache
-E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\obj\Debug\netcoreapp3.1\OnlineShoppingWebApp.MvcApplicationPartsAssemblyInfo.cache
 E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\obj\Debug\netcoreapp3.1\OnlineShoppingWebApp.RazorAssemblyInfo.cache
 E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\obj\Debug\netcoreapp3.1\OnlineShoppingWebApp.RazorAssemblyInfo.cs
 E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\obj\Debug\netcoreapp3.1\OnlineShoppingWebApp.TagHelpers.input.cache
@@ -43,3 +41,8 @@ E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppi
 E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\obj\Debug\netcoreapp3.1\OnlineShoppingWebApp.dll
 E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\obj\Debug\netcoreapp3.1\OnlineShoppingWebApp.pdb
 E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\obj\Debug\netcoreapp3.1\OnlineShoppingWebApp.genruntimeconfig.cache
+E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\obj\Debug\netcoreapp3.1\OnlineShoppingWebApp.csproj.CoreCompileInputs.cache
+E:\Git\WebApp\AspDotNetCore\OnlineShoppingSite\OnlineShoppingWebApp\OnlineShoppingWebApp\obj\Debug\netcoreapp3.1\OnlineShoppingWebApp.MvcApplicationPartsAssemblyInfo.cache
